@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body >
+    <nav class="navbar navbar-expand-lg py-5" style="background-color: #1E202B">
+        <div class="container-fluid justify-content-center align-items-center">
+            <div class="contain d-flex justify-content-center">
+                <a class="navbar-brand mx-5 d-flex" href="#">
+                    <img src="logo.png" alt="Logo" class="d-inline-block align-text-top my-1" width="64" height="38">
+                    <div class="caption mx-3">
+                        <p class="text-white fw-medium mb-0">Weather</p>
+                        <p class="text-white fw-light">Tagline Goes Here</p>
+                    </div>
+                  </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item nav-linking">
+                            <a class="nav-link px-4 mx-2 text-white active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item nav-linking">
+                            <a class="nav-link px-4 mx-2 text-white" href="#">Features</a>
+                        </li>
+                        <li class="nav-item nav-linking">
+                            <a class="nav-link px-4 mx-2 text-white" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item nav-linking">
+                            <a class="nav-link px-4 mx-2 text-white" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item nav-linking">
+                            <a class="nav-link px-4 mx-2 text-white" href="#">Pricing</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <video id="background-video" autoplay="" loop="" muted="">
+        <source src="css/bg.mp4" type="video/mp4">
+      </video>
+    <main class="py-4  d-flex flex-column align-items-center justify-content-center ">
+        <div class="container">
+            <div class="search-bar my-3 ">
+                <form action="GET">
+                    <div class="buttonIn">
+                        <input type="text" class="form-control rounded-4" placeholder="Search" id="input" oninput="autoComplete(this)">
+                        <button type="button" class="btn bg-info d-flex align-items-center  justify-content-center rounded-4 h-100 my-0 mx-2">Find</button>
+                    </div>
+                </form>
+            </div>
+            <div class="card-group">
+                <div class="card text-bg-light mb-3" style="max-width: 33rem;">
+                    <div class="card-header"></div>
+                    <div class="card-body">
+                      <h5 class="main-title"></h5>
+                      <p class="main-text"></p>
+                      <div class="icon">
+                      </div>
+                      <div class="status text-info">
+                        
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="card text-bg-light mb-3 card2" style="max-width: 33rem;">
+                    <div class="card-header"></div>
+                    <div class="card-body">
+                      <h5 class="main-title"></h5>
+                      <p class="main-text"></p>
+                      <div class="icon">
+                      </div>
+                      <div class="status text-info">
+                        
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="card text-bg-light mb-3 card3" style="max-width: 33rem;">
+                    <div class="card-header"></div>
+                    <div class="card-body">
+                      <h5 class="main-title"></h5>
+                      <p class="main-text"></p>
+                      <div class="icon">
+                      </div>
+                      <div class="status text-info">
+                        
+                      </div>
+
+                    </div>
+                  </div>
+              </div>
+        </div>
+    </main>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
