@@ -73,7 +73,22 @@ async function autoComplete(that){
 }
 
 
+// First, get the user's location coordinates using the Geolocation API
+if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(showCity);
+} else {
+  console.log("Geolocation is not supported by this browser.");
+}
 
+// Then, pass the location coordinates to a Geocoding API to get the city name
+async function showCity(position) {
+  const latitude = position.coords.latitude;
+  const longitude = position.coords.longitude;
 
+  // Make a request to a Geocoding API (e.g. Google Maps Geocoding API)
+  const url = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en$`;
 
-getData("Cairo")
+  let result = await fetch(url);
+  let res = await result.json()
+  getData(res.city) 
+}
